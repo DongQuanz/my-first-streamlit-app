@@ -1,11 +1,9 @@
 import streamlit as st
 
-x = 6
-st.write('Hello COTAI', x)
-st.title('This is a title')
-st.header('This is a header')
-st.subheader('This is a subheader')
-st.caption('This is a caption')
-st.text('This is a text')
-st.code('x = 5\nprint(x)')
-st.latex('x^2 + \sqrt{y} = \pi')
+st.title('GIẢI PHƯƠNG TRÌNH BẬC NHẤT')
+
+a = float(st.number_input('Tham số a'))
+b = float(st.number_input('Tham số b'))
+ans = -b/a
+if st.button('Giải'):
+    st.success("Phương trình có 1 nghiệm là ", ans)
