@@ -1,6 +1,9 @@
 import streamlit as st
 
-st.title("Congratulations!")
-st.header("You've just created a website")
-st.balloons()
-st.snow()
+st.title('GIẢI PHƯƠNG TRÌNH BẬC NHẤT')
+
+a = float(st.number_input('Tham số a'))
+b = float(st.number_input('Tham số b'))
+ans = -b/a
+if st.button('Giải'):
+    st.success("Phương trình có 1 nghiệm là ", ans)
